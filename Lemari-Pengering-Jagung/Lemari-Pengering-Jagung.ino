@@ -98,10 +98,10 @@ void setup() {
   lcd.init();
   lcd.backlight();
 
-  SPI.begin();      // Init SPI bus
-  mfrc522.PCD_Init();   // Init MFRC522
+  SPI.begin();      
+  mfrc522.PCD_Init();  
 
-  lcd.clear(); // Clear LCD screen
+  lcd.clear(); 
 
   lcd.setCursor(0,0);
            //0123456789012345
@@ -110,13 +110,7 @@ void setup() {
            //0123456789012345
   lcd.print("PENGERING JAGUNG");
   delay(5000);
-  lcd.setCursor(0,0);
-           //0123456789012345
-  lcd.print("  AHMAT  MAISA  ");
-  lcd.setCursor(0,1);
-           //0123456789012345
-  lcd.print(" 17101152620091 ");
-  delay(5000);
+  
   dht.begin();
 }
 
